@@ -7,23 +7,33 @@ This project is a Hardhat DAO boilerplate inspired by [PatrickAlphaC repo](https
 This template includes the following features:
 
 - A basic DAO contract with the ability to create proposals, vote on proposals, and execute proposals.
-- The DAO contract is based on the OpenZeppelin Governance model, which includes role-based access control (RAC) with different roles such as proposer, voter, and executor.
+- The DAO contract is based on the OpenZeppelin Governance model, which includes role-based access control with different roles such as proposer, voter, and executor.
 - Hardhat-deploy plugin for easy deployment of smart contracts to various Ethereum networks.
 - Example tests for the DAO contract using Hardhat's built-in testing framework.
 
 ## Installation
 
 1. Clone this repository to your local machine:
-`git clone https://github.com/gabrielstoica/hardhat-dao-template`
+```bash
+git clone https://github.com/gabrielstoica/hardhat-dao-template
+```
 2. Change directory to the cloned project:
-`cd hardhat-dao-template`
+```bash
+cd hardhat-dao-template
+```
 3. Install dependencies:
-`yarn install`
+```bash
+yarn install
+```
 4. Update the `hardhat.config.js` file and `.env` with your deployment configurations and network settings, such as `PRIVATE_KEY`, `INFURA_API_KEY` and `POLYGONSCAN_API_KEY`.
 5. Compile the contracts:
-`yarn hardhat compile`
+```bash
+yarn hardhat compile
+```
 6. Deploy the DAO contract to a testnet or mainnet using the hardhat-deploy plugin:
-`yarn hardhat deploy`
+```bash
+yarn hardhat deploy
+```
 
 ## Contributing
 
