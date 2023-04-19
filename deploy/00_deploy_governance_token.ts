@@ -31,6 +31,7 @@ const deployGovernanceToken: DeployFunction = async function (
   }
 
   console.log(`Delegating votes to ${deployer}...`);
+  // self-delegating voting power
   await delegate(governanceToken.address, deployer);
   console.log(`Votes successfully delegated!`);
 };

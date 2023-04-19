@@ -18,7 +18,10 @@ const config: HardhatUserConfig = {
       live: false,
       chainId: 31337,
     },
-    localhost: getChainConfig('localhost'),
+    localhost: {
+      live: false,
+      chainId: 31337,
+    },
     polygon_mumbai: getChainConfig('polygon_mumbai'),
     polygon: getChainConfig('polygon'),
   },

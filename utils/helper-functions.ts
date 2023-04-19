@@ -1,9 +1,10 @@
-import { run } from "hardhat";
+import { run } from 'hardhat';
+import { mine } from '@nomicfoundation/hardhat-network-helpers';
 
-const verify = async (contractAddress: string, args: any[]) => {
-  console.log("Verifying contract...");
+export const verify = async (contractAddress: string, args: any[]) => {
+  console.log('Verifying contract...');
   try {
-    await run("verify:verify", {
+    await run('verify:verify', {
       address: contractAddress,
       constructorArguments: args,
     });
@@ -12,4 +13,6 @@ const verify = async (contractAddress: string, args: any[]) => {
   }
 };
 
-export default verify;
+export const moveBlocks = async (blocksToMove: number) => {
+  await mine(blocksToMove);
+};

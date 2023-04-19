@@ -35,16 +35,6 @@ const chainsConfig: Record<string, ChainConfig> = {
     rpcUrl: `https://polygon-mumbai.infura.io/v3/${INFURA_API_KEY}`,
     defenderId: 'mumbai',
   },
-  hardhat: {
-    live: false,
-    chainId: 31337,
-    rpcUrl: '',
-  },
-  localhost: {
-    live: false,
-    chainId: 31337,
-    rpcUrl: '',
-  },
 };
 
 export const getChainConfig = (
